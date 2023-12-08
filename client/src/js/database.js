@@ -39,6 +39,8 @@ export const getDb = async () =>
   //logs retrieved content to console
   const retrievedText = await request;
   console.log('retrieved text from database;', retrievedText);
+
+  return retrievedText; //returns text retrieved from database
 }
 
 initdb();
