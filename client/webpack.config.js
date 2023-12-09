@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = () =>
 {
   return {
-    mode: 'production',
+    mode: 'development',
     entry:
     {
       main: './src/js/index.js',
@@ -52,11 +52,13 @@ module.exports = () =>
         description: 'Just another text editor',
         start_url: './',
         publicPath: './',
+        background_color: '#292640',
+        theme_color: '#9287e5',
         icons:
         [
           {
             src: path.resolve('./src/images/logo.png'),
-            size: '96x96',
+            size: [96, 128, 192, 256, 384, 512],
             destination: path.join('./assets', './icons'),
           },
         ],
