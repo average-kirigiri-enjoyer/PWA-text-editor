@@ -29,12 +29,13 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 // TODO: Implement asset caching
 const assetCache = new CacheFirst(
 {
-  cacheName: 'asset-cache',
+  cacheName: 'asset-cache', //creates a cache called 'asset-cache'
   plugins:
   [
-    new CacheableResponsePlugin({statuses: [0, 200]}),
-    new ExpirationPlugin({maxAgeSeconds: 30 * 24 * 60 * 60}),
+    new CacheableResponsePlugin({statuses: [0, 200]}), //cache has responses 0-200 available
+    new ExpirationPlugin({maxAgeSeconds: 30 * 24 * 60 * 60}), //cache contents expire after a month
   ],
 });
 
+//routes any image assets to be stored in the 'asset-cache' cache
 registerRoute(({request}) => request.destination === 'image', assetCache);
