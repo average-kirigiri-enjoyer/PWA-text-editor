@@ -14,6 +14,7 @@ window.addEventListener('beforeinstallprompt', (event) =>
 butInstall.addEventListener('click', async () =>
 {
   //when the install button is clicked, open the PWA installation prompt
+  console.log('install button clicked');
   installPrompt.prompt();
 
   //await the user's response to the prompt
@@ -24,7 +25,6 @@ butInstall.addEventListener('click', async () =>
   {
     butInstall.setAttribute('disabled', true);
     butInstall.textContent = 'Installed!';
-    installPrompt = null;
   }
 });
 
