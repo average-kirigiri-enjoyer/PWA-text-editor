@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository serves as a demo of data-persistence techniques & asset caching, plus the ability to 'download' a website as a 'Progressive Web Application' (PWA), allowing users to access a website as per a desktop application, or mobile app.
+This repository serves as a demo of data-persistence techniques & asset caching, plus the ability to 'download' a website as a 'Progressive Web Application' (PWA), allowing users to access a website as per a desktop application or mobile app.
 
 ## Usage
 
@@ -18,7 +18,7 @@ To run the application locally, begin by installing the repository files & extra
 
 Navigate to the repository a git bash shell (or equivalent), and type "npm run install" to install the application's dependencies. Next, type "npm run start" to build the webpack dist folder & start the application.
 
-Next, open up a web browser and navigate to "http://localhost:3001/", where you should now find the home page of the application.
+Next, open up a web browser and navigate to "http://localhost:3001/", where you should now find the application.
 
 ## Preview
 
